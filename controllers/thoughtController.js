@@ -2,7 +2,7 @@ const { Thought, User, Reaction } = require('../models');
 const {Types} = require('mongoose');
 
 // Define the ThoughtController object, which contains methods for handling various API requests related to thoughts
-const thoughtController = {
+const ThoughtController = {
   async getAllThoughts(req, res) {
     try {
       const thoughts = await Thought.find({});
@@ -92,4 +92,4 @@ const thoughtController = {
 
 };
 // Export thoughtController
-module.exports = thoughtController;
+module.exports = ThoughtController;
