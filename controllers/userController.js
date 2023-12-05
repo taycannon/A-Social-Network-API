@@ -56,6 +56,7 @@ module.exports = {
             res.status(500).json(err)
         }
     },
+    
     // delete user
     async deleteUser(req, res) {
         try {

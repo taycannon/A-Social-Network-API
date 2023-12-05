@@ -18,8 +18,10 @@ router
   .get(getSingleThought)
   .put(updateThought)
   .delete(deleteThought);
+
 //create thought
 router.route('/:thoughtId/reactions').post(addReaction)
+
 //delete thought
 router.route('/:thoughtId/reactions/:reactionId').delete(deleteReaction)
 
