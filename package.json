@@ -1,18 +1,25 @@
 {
-  "name": "a-social-network-api",
+  "name": "A-Social-Network-API",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node utils/seed"
+  },
+  "dependancies": {
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "description": "",
   "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^7.0.2",
-    "nodemon": "^3.0.2"
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1"
   }
 }
